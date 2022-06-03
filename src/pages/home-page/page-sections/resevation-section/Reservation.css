@@ -1,0 +1,119 @@
+.reservation_container {
+  padding-top: 130px;
+}
+
+.reservation_img_container {
+  overflow: hidden;
+}
+
+
+.reservation_img_container img {
+  transition: transform 1.5s ease;
+}
+
+.reservation_img_container:hover img {
+  transform: scale(1.1);
+}
+
+.reservation_div {
+  position: relative;
+}
+
+.reservation_content_div {
+  height: 400px;
+  width: 650px;
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  z-index: 1000;
+  background: white;
+  box-shadow: 26px 27px 50px -20px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s;
+}
+
+.reservation_content_div:hover {
+  top: 96px;
+  box-shadow: 26px 27px 60px -20px rgba(0, 0, 0, 0.75);
+}
+
+
+.underlined {
+  position: relative;
+  margin-right: 1rem;
+  color:#EE3B24;
+}
+.underlined:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  border: solid 10px #EE3B24;
+  border-color: #EE3B24 transparent transparent transparent;
+  border-radius: 60%;
+}
+
+.reservation_slogan{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 75px;
+}
+
+
+.party_booking_heading{
+  padding-bottom: 130px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .reservation_container {
+    padding-top: 100px;
+  }
+  
+  .reservation_content_div {
+    margin-top: 30px;
+    height: 700px;
+    width: 300px;
+    position: static;
+    top: none;
+    left: none;
+    background: white;
+    box-shadow: 26px 27px 50px -20px rgba(0, 0, 0, 0.75);
+  }
+
+  .reservation_content_div:hover {
+    top: none;
+    box-shadow: 26px 27px 60px -20px rgba(0, 0, 0, 0.75);
+  }
+
+ 
+  .reservation_slogan{
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 100px;
+  }
+  .party_booking_heading{
+    padding-bottom: 120px;
+  }
+
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .reservation_div {
+    padding-top: 70px;
+  }
+  .reservation_content_div {
+    position: static;
+    top:none;
+    left: none;
+    background: white;
+    box-shadow: 26px 27px 50px -20px rgba(0, 0, 0, 0.75);
+  }
+
+  .reservation_content_div:hover {
+    top: none;
+    box-shadow: 26px 27px 60px -20px rgba(0, 0, 0, 0.75);
+  }
+}

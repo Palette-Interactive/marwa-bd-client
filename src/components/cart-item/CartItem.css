@@ -1,0 +1,18 @@
+.cart_item_cards{
+    border-radius: 3px;
+    height:60px;
+}
+
+.cart_item_cards:hover{
+   background: rgb(238, 237, 237);
+}
+
+.cart_item_cards>img{
+    border-radius: 50%;
+}
+
+.cart_item_number{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(91, 91, 91);
+}

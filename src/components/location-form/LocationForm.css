@@ -1,0 +1,31 @@
+.searchBar_container{
+    height: 5em;
+    width: 40em;
+   
+   
+}
+
+.searchBar{
+    width: 21em;
+    height: 2em;
+    outline: none;
+    border:none;   
+}
+
+@media only screen and (max-width: 600px) {
+    .searchBar_container{
+        height: 5em;
+        width: 20em;
+        margin-bottom: 90px;
+    }
+    
+    .searchBar{
+        width: 21em;
+        height: 2em;
+        display: none !important;
+    }
+
+    .ew{
+        display: block;
+    }
+}

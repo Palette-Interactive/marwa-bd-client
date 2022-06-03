@@ -1,0 +1,24 @@
+.form_input {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0.7rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(232, 232, 232);
+  border: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

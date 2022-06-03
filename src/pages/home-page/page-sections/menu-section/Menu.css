@@ -1,0 +1,154 @@
+.menu_container {
+  padding-top: 40px;
+}
+
+.menu_title_container {
+  height: 300px;
+}
+
+.title_container {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.menu_title {
+  color: #6d2c37;
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.menu_title:hover {
+  color: #6d2c37;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.menu_title::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  clip-path: polygon(
+    0% -20%,
+    100% -30%,
+    100% -10%,
+    0% 0%,
+    0% 130%,
+    100% 120%,
+    100% 100%,
+    0% 110%
+  );
+  background-color: #ee3b24;
+
+  transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.menu_title:hover::before {
+  clip-path: polygon(
+    0% 10%,
+    100% 0%,
+    100% 20%,
+    0% 30%,
+    0% 100%,
+    100% 90%,
+    100% 70%,
+    0% 80%
+  );
+}
+
+.menu_title::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 5ch;
+  height: 5ch;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(0deg) scale(1);
+  transition: transform 1s ease;
+  background: url("../../../../assets/kebab.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu_title:hover::after {
+  transform: translate(50%, -50%) rotate(90deg);
+}
+
+.ul_hover_effect {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+  color: black;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ul_hover_effect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ee3b24;
+  transition: width 0.5s ease-out;
+}
+.ul_hover_effect:hover::before {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu_container {
+    padding-top: 0px;
+    margin-top: -150px;
+  }
+
+  .menu_title {
+    color: #6d2c37;
+  }
+  .menu_title::after {
+    transform: translate(50%, -50%) rotate(90deg) scale(1);
+    transition: transform 1s ease;
+    background: url("../../../../assets/kebab.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .ul_hover_effect {
+    background: #EE3B24;
+    margin: 2px;
+    padding: 10px;
+    color: white !important;
+    border-radius: 25px;
+    font-size: 17px;
+  }
+
+  .ul_hover_effect::before {
+    content: none;
+    position: none;
+    left: none;
+    bottom: none;
+    width: none;
+    height: none;
+    background-color: none;
+    transition: none;
+
+  }
+
+  .ul_hover_effect:hover{
+    background: #f06856;
+  }
+}

@@ -1,0 +1,55 @@
+.card_holder_body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+ .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(2px);
+  }
+
+ .swiper-slide-active{
+      filter: blur(0px)
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+  }
+
+
+  .card_item_price{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: rgb(46, 42, 42);
+  }
+
+  .card_item_details>h6{
+    padding: 5px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .swiper {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 50px;
+    }
+  }
+  

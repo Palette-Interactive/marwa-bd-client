@@ -1,0 +1,58 @@
+.menuNav_list{
+    background: #EE3B24;
+}
+
+.ul_hover_effect_menuNav {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .ul_hover_effect_menuNav::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #efd0cc;
+    transition: width 0.5s ease-out;
+  }
+  .ul_hover_effect_menuNav:hover::before {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .menuNav_list{
+        background: inherit;
+    }
+  
+    .ul_hover_effect_menuNav {
+      margin: 2px;
+      padding: 10px;
+      color: white !important;
+      border-radius: 50px;
+      border: solid 1px #EE3B24;
+      color: #EE3B24 !important;
+    }
+  
+    .ul_hover_effect_menuNav::before {
+      content: none;
+      position: none;
+      left: none;
+      bottom: none;
+      width: none;
+      height: none;
+      background-color: none;
+      transition: none;
+  
+    }
+  
+    .ul_hover_effect:hover{
+      background: #f06856;
+    }
+  }

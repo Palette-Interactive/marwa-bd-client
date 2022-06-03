@@ -1,0 +1,119 @@
+.footer {
+  background: #eaeaea;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.footer_disclaimer {
+  font-size: 16px;
+  background: #e1472c;
+  color: #fff;
+  padding: 1rem 3rem;
+}
+.footer_links {
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer_row {
+  margin-right: 3rem;
+  width: calc(25% - 3rem);
+}
+.footer_row ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer_row h6 {
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+#aboutUsFooter>p{
+  padding: 0;
+  margin-bottom: 0.25rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  color: #1a1a2c;
+}
+.footer_row ul li {
+  padding: 0;
+  margin-bottom: 0.25rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  color: #1a1a2c;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.footer_row ul li:hover {
+  opacity: 1;
+}
+.footer_bottom {
+  padding: 15px 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eaeaea;
+  border-top: 1px solid rgba(26, 26, 44, 0.05);
+}
+.footer_logo {
+  height: 4rem;
+  width: auto;
+  margin-right: 1rem;
+}
+.footer_copy {
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0.75;
+}
+.footer_copy a {
+  color: #f90;
+  line-height: 1.2;
+  transition: all 0.2s;
+  border-bottom: 1px dotted #f90;
+}
+.footer_copy a:hover {
+  color: #dc143c;
+  border-bottom: 1px dotted #dc143c;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer_links {
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    flex-flow: column nowrap;
+  }
+  .footer_row {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  #aboutUsFooter>p{
+   width: 200px;
+   text-align: left
+  }
+  .footer_disclaimer {
+    padding: 1.5rem;
+  }
+  .footer_logo {
+    height: 5rem;
+    width: auto;
+    margin-right: 1rem;
+  }
+  .footer_copy {
+    padding: 0.5rem 0 1rem 0;
+  }
+  
+  .footer_bottom {
+    padding: 1.5rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  
+}
+
+
